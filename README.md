@@ -287,11 +287,7 @@ PDF
 
 aws cloudfront get-distribution-config --id $DIST_ID > current-config.json ~ $ cat current-config.json { "ETag": "E23ZP02F085DFQ", "DistributionConfig": { "CallerReference": "video-dist-1789183994", "Aliases": { "Quantity": 0 }, "DefaultRootObject
 
-PASTED
-
 aws cloudfront update-distribution \ > --id $DIST_ID \ > --distribution-config file://updated-config-2.json \ > --if-match $DIST_ETAG_2 { "ETag": "E3UN6WX5RRO2AG", "Distribution": { "Id": "E36PBEHOQ0C5FG", "ARN": "arn:aws:cloudfront::930628639096:distribution/E36PBEHOQ0
-
-PASTED
 
 lambda_function.py
 
