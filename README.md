@@ -188,7 +188,8 @@ No public self signup, all accounts are admin provisioned
 Denied responses are identical whether a user does not exist or simply is not approved, this prevents account enumeration
 The signing private key lives only in AWS Secrets Manager, never in code or version control
 All access is time limited, a 1 hour signed policy window
-Future Enhancements
+
+**Future Enhancements**
 Geo restriction: CloudFront's native geo restriction feature to allow U.S. only access
 Access logging: CloudFront access logs to S3 for a full audit trail of every request, including geographic origin
 Key rotation: scripted or scheduled rotation of the signing key pair
