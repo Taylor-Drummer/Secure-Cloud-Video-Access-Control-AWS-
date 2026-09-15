@@ -154,7 +154,7 @@ fetch(API_URL + '?username=' + encodeURIComponent(username))
   });
 Troubleshooting Log
 
-Two real issues came up during the build. Both are the kind of thing no tutorial mentions, and both required actually reading the error rather than guessing.
+Two real issues came up during the build.
 
 Issue 1: RSA key format mismatch
 
